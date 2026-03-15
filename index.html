@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>$LEPRECOIN GAME</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,7 +12,6 @@
 <h1 class="gameTitle">$LEPRECOIN GAME</h1>
 
 <!-- HOME -->
-
 <div id="home">
 
 <div class="stats">
@@ -25,7 +25,6 @@
 </div>
 
 <!-- TAP AREA -->
-
 <div id="tapBtn">
 <img src="logo.png" class="logo">
 </div>
@@ -35,17 +34,13 @@
 <button class="dailyBtn" onclick="dailyReward()">🎁 Daily Reward</button>
 
 <!-- SMALL CHARACTER -->
-
 <img src="character.png" class="character">
 
 </div>
 
 <!-- SHOP -->
-
 <div id="shop" class="page">
-
 <h2 class="pageTitle">MINE SHOP</h2>
-
 <div class="shopGrid">
 
 <div class="card">
@@ -59,7 +54,7 @@
 <div class="card">
 <img src="mine2.png">
 <p>Cost: 1500</p>
-<p>+4 tap</p>
+<p>+3 tap</p>
 <p>+2/s</p>
 <button onclick="buy(2)">BUY</button>
 </div>
@@ -67,7 +62,7 @@
 <div class="card">
 <img src="mine3.png">
 <p>Cost: 2500</p>
-<p>+6 tap</p>
+<p>+4 tap</p>
 <p>+3/s</p>
 <button onclick="buy(3)">BUY</button>
 </div>
@@ -75,7 +70,7 @@
 <div class="card">
 <img src="mine4.png">
 <p>Cost: 4000</p>
-<p>+8 tap</p>
+<p>+5 tap</p>
 <p>+4/s</p>
 <button onclick="buy(4)">BUY</button>
 </div>
@@ -83,7 +78,7 @@
 <div class="card">
 <img src="mine5.png">
 <p>Cost: 6000</p>
-<p>+10 tap</p>
+<p>+6 tap</p>
 <p>+5/s</p>
 <button onclick="buy(5)">BUY</button>
 </div>
@@ -91,7 +86,7 @@
 <div class="card">
 <img src="mine6.png">
 <p>Cost: 8000</p>
-<p>+15 tap</p>
+<p>+7 tap</p>
 <p>+6/s</p>
 <button onclick="buy(6)">BUY</button>
 </div>
@@ -99,14 +94,15 @@
 <div class="card">
 <img src="mine7.png">
 <p>Cost: 10000</p>
-<p>+20 tap</p>
+<p>+8 tap</p>
+<p>0/s</p>
 <button onclick="buy(7)">BUY</button>
 </div>
 
 <div class="card">
 <img src="mine8.png">
 <p>Cost: 15000</p>
-<p>+25 tap</p>
+<p>+9 tap</p>
 <p>+7/s</p>
 <button onclick="buy(8)">BUY</button>
 </div>
@@ -115,25 +111,21 @@
 </div>
 
 <!-- LEADERBOARD -->
-
 <div id="leaderboard" class="page">
-
 <h2 class="pageTitle">LEADERBOARD</h2>
-
 <div id="leaderboardList">
 <p>Loading leaderboard...</p>
 </div>
-
 </div>
 
 <!-- MENU -->
-
 <div class="menu">
 <button onclick="showPage('home')">🏠</button>
 <button onclick="showPage('shop')">⛏</button>
 <button onclick="showPage('leaderboard')">🏆</button>
 </div>
 
+<!-- GAME MESSAGE -->
 <div id="gameMessage"></div>
 
 <!-- Supabase JS -->

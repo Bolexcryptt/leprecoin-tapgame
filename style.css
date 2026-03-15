@@ -14,10 +14,13 @@ background-position:center;
 
 .gameTitle{
 margin-top:10px;
+font-size:6vw;
 }
 
 .logo{
-width:340px;
+width:80vw;
+max-width:340px;
+height:auto;
 }
 
 #tapBtn{
@@ -27,12 +30,13 @@ position:relative;
 }
 
 .character{
-width:90px;
-margin-top:40px;
+width:15vw;
+max-width:90px;
+margin-top:20px;
 }
 
 .stats{
-font-size:20px;
+font-size:5vw;
 }
 
 .bar{
@@ -53,8 +57,9 @@ width:100%;
 margin-top:10px;
 background:gold;
 border:none;
-padding:8px 16px;
+padding:3vw 5vw;
 font-weight:bold;
+font-size:4vw;
 }
 
 .menu{
@@ -71,7 +76,7 @@ justify-content:space-around;
 background:none;
 border:none;
 color:white;
-font-size:22px;
+font-size:6vw;
 }
 
 .page{
@@ -80,11 +85,12 @@ display:none;
 
 .pageTitle{
 margin-top:20px;
+font-size:5vw;
 }
 
 .shopGrid{
 display:grid;
-grid-template-columns:1fr 1fr;
+grid-template-columns:repeat(auto-fit, minmax(120px, 1fr));
 gap:15px;
 padding:15px;
 }
@@ -112,7 +118,7 @@ font-weight:bold;
 
 .tapFloat{
 position:absolute;
-font-size:22px;
+font-size:4vw;
 font-weight:bold;
 color:#ffd700;
 pointer-events:none;
